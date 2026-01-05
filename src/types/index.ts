@@ -22,6 +22,13 @@ export interface Fruit {
   average: number;
 }
 
+export interface Variant {
+  id: number;
+  name: string;
+  value: number;
+  background_color: string;
+  text_color: string;
+}
 export interface Order {
   id: string;
   userId: string;
@@ -31,7 +38,6 @@ export interface Order {
   createdAt?: Date;
   updatedAt?: Date;
 }
-
 export interface OrderItem {
   fruitId: string;
   quantity: number;

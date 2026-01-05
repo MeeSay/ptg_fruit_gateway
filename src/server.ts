@@ -47,12 +47,12 @@ const PORT = config.port;
 
 app.listen(PORT, () => {
   console.log(`
-  ╔═══════════════════════════════════════╗
-  ║  PTGFruit API Gateway                 ║
-  ║  Server running on port ${PORT}          ║
+  ╔═══════════════════════════════════════════╗
+  ║  PTGFruit API Gateway                     ║
+  ║  Server running on port ${PORT}           ║
   ║  Environment: ${config.nodeEnv.padEnd(23)}║
-  ║  http://localhost:${PORT}                ║
-  ╚═══════════════════════════════════════╝
+  ║  http://localhost:${PORT}                 ║
+  ╚═══════════════════════════════════════════╝
   `);
 });
 

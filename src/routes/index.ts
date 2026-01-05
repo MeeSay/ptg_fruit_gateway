@@ -1,8 +1,6 @@
 import { Router } from "express";
 import fruitRoutes from "./fruitRoutes";
-import userRoutes from "./userRoutes";
-import orderRoutes from "./orderRoutes";
-
+import variantRoutes from "./variantRoutes";
 const router = Router();
 
 // Health check
@@ -16,7 +14,6 @@ router.get("/health", (req, res) => {
 
 // API routes
 router.use("/fruits", fruitRoutes);
-router.use("/users", userRoutes);
-router.use("/orders", orderRoutes);
+router.use("/variants", variantRoutes);
 
 export default router;
